@@ -1,6 +1,7 @@
-let cards =  data.map( (course) => {
+// This code has beeen translated to another to card js to be used as a staeful component
+let cards =  data.map( (course, i) => {
     return (
-        <Card data={course}></Card>
+        <Card key={i} data={course}></Card>
     )
 })
 
